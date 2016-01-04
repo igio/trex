@@ -6,4 +6,4 @@ The application was developed while learning Meteor and assessing its suitabilit
 It doesn't do much as it was intended as a test bed for application file structure,
 integration of user accounts and material design.
 
-Next step is to convert the application to React templates using the Meteor infrastructure. 
+Next step is to convert the application from Blaze to React.
