@@ -1,9 +1,9 @@
 # trex
 Time tracking tool using Meteor
 
-The application was developed while learning Meteor and assessing its suitability for a project.
+The application was developed while assessing Meteor's suitability for a larger project.
 
-It doesn't do much as it was intended as a test bed for application file structure,
-integration of user accounts and material design.
+It doesn't do much as it was intended to be a test bed for defining the application file structure,
+as well as the integration of user accounts and material design.
 
 Next step is to convert the application from Blaze to React.
