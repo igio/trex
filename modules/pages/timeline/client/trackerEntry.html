@@ -1,0 +1,21 @@
+<template name="trackerEntry">
+    <li>
+        <div class="collapsible-header">
+            <div class="col s12 m6">{{name}}</div>
+            <span class="right">{{totalTime}}</span>
+            <div class="clearfix"></div>
+        </div>
+        <div class="collapsible-body">
+            {{#if hasData}}
+                {{> c3 data=chartData id=chartId}}
+                <ul>
+                {{#each trackSummary}}
+                    <li>On: {{sDate}} spent: {{humanTimeSpent}} [{{timeSpent}}]</li>
+                {{/each}}
+                </ul>
+            {{else}}
+                <p>No data collected.</p>
+            {{/if}}
+        </div>
+    </li>
+</template>

@@ -1,0 +1,16 @@
+<template name="trackerTemplate">
+    <li class="collection-item">
+        {{#if editing}}
+            <input type="text" value="{{name}}" class="col s10 m11"/>
+        {{else}}
+            {{name}}
+        {{/if}}
+        <i class="right material-icons grey-text pointer clear">clear</i>
+        {{#if editing}}
+            <i class="right material-icons grey-text pointer done">done</i>
+        {{else}}
+            <i class="right material-icons grey-text pointer edit">edit</i>
+        {{/if}}
+        <div class="clearfix"></div>
+    </li>
+</template>

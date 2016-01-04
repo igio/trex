@@ -1,0 +1,24 @@
+<template name="trexManage">
+    <div class="container">
+        <h1>
+            <div class="valign-wrapper">
+                <i class="valign right-space-small material-icons">edit</i> <h5>What do you want to track?</h5>
+            </div>
+        </h1>
+        <div class="row">
+            <div class="col s12">
+                {{> newTrackerForm }}
+                <h5>Currently tracking</h5>
+                {{#if trackers.count}}
+                    <ul class="collection">
+                        {{#each trackers}}
+                            {{> trackerTemplate}}
+                        {{/each}}
+                    </ul>
+                {{else}}
+                    <p class="">No trackers. Add one!</p>
+                {{/if}}
+            </div>
+        </div>
+    </div>
+</template>

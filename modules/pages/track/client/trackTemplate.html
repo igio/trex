@@ -1,0 +1,12 @@
+<template name="trackTemplate">
+    <li class="collection-item pointer {{#if tracking}}green lighten-4 on {{else}}off{{/if}}">
+        {{name}}
+        <i class="right material-icons pointer {{#if tracking}}green-text darken-4{{else}}grey-text{{/if}}">schedule</i>
+        {{#if timeSpent}}
+        <div class="clearfix">
+            <span class="right-space-large red-text darken-2">{{timeSpent}}</span>
+        </div>
+        {{/if}}
+    </li>
+    <div class="clearfix"></div>
+</template>

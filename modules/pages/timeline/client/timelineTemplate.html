@@ -1,0 +1,32 @@
+<template name="timelineTemplate">
+    <div class="container">
+        <div class="row top-space-large">
+            <div class="col s12 m11">
+                <div class="valign-wrapper">
+                    <i class="valign right-space-small material-icons">timeline</i>
+                    <h5>Statistics</h5>
+                </div>
+            </div>
+            <div class="col s12 m1">
+                <div class="valign-wrapper">
+                    <button class="btn-floating waves-effect waves-light red">
+                        <i class="material-icons">assessment</i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col s12">
+                {{#if trackers.count}}
+                    <ul class="collapsible popout" data-collapsible="accordion">
+                    {{#each trackers}}
+                        {{> trackerEntry}}
+                    {{/each}}
+                    </ul>
+                {{else}}
+                    <p class="card-panel">No trackers. Add one!</p>
+                {{/if}}
+            </div>
+        </div>
+    </div>
+</template>

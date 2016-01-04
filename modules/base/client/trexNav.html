@@ -1,0 +1,50 @@
+<template name="trexNav">
+    <div class="navbar-fixed">
+        <nav class="white" role="navigation">
+            <div class="nav-wrapper container">
+                <a href="/" class="brand-logo">TreX</a>
+                <a href="#" data-activates="mobile-menu" class="button-collapse">
+                    <i class="material-icons">menu</i>
+                </a>
+                <ul class="right hide-on-med-and-down">
+                    <li><a href="/story">Story</a></li>
+                    <li><a href="/plans">Plans</a></li>
+                    {{#if currentUser }}
+                        <li><a href="/track">
+                            <i class="material-icons">schedule</i>
+                        </a></li>
+                        <li><a href="/manage">
+                            <i class="material-icons">edit</i>
+                        </a></li>
+                        <li><a href="/timeline">
+                            <i class="material-icons">timeline</i>
+                        </a></li>
+                    {{/if}}
+                    {{> atNavButton }}
+                </ul>
+                <ul id="mobile-menu" class="side-nav">
+                    <li><a href="/story">Story</a></li>
+                    <li><a href="/plans">Plans</a></li>
+                    {{#if currentUser }}
+                        <li><a href="/track">
+                            <div class="valign-wrapper">
+                                <i class="valign left material-icons">schedule</i> Track
+                            </div>
+                        </a></li>
+                        <li><a href="/manage">
+                            <div class="valign-wrapper">
+                                <i class="valign left material-icons">edit</i> Manage
+                            </div>
+                        </a></li>
+                        <li><a href="/timeline">
+                            <div class="valign-wrapper">
+                                <i class="left material-icons">timeline</i> Timeline
+                            </div>
+                        </a></li>
+                    {{/if}}
+                    {{> atNavButton }}
+                </ul>
+            </div>
+        </nav>
+    </div>
+</template>
