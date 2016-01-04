@@ -13,4 +13,4 @@ Is basic functions are:
 - Track time spent on tasks;
 - Basic visualization of time tracking data;
 
-Next step will be to convert the application from Blaze to React.
+Next step will be to convert the application from Blaze to Angular 2 and React.
